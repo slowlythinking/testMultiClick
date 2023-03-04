@@ -97,7 +97,8 @@ function drawing2() {
     // 交互模式 https://g6.antv.vision/zh/docs/manual/middle/states/mode
     modes: {
       // 内置 Behavior https://g6.antv.vision/zh/docs/manual/middle/states/defaultBehavior#%E5%86%85%E7%BD%AE-behavior
-      default: ['zoom-canvas', 'drag-canvas', 'drag-node', 'brush-select']
+      // default: ['zoom-canvas', 'drag-canvas', 'drag-node', 'brush-select']
+      default: ['drag-node']
     },
     nodeStateStyles: {
       // 鼠标经过到节点上
@@ -170,7 +171,8 @@ function drawing1() {
     // 交互模式 https://g6.antv.vision/zh/docs/manual/middle/states/mode
     modes: {
       // 内置 Behavior https://g6.antv.vision/zh/docs/manual/middle/states/defaultBehavior#%E5%86%85%E7%BD%AE-behavior
-      default: ['zoom-canvas', 'drag-canvas', 'drag-node', 'brush-select']
+      // default: ['zoom-canvas', 'drag-canvas', 'drag-node', 'brush-select']
+      default: ['drag-node']
     },
     nodeStateStyles: {
       // 鼠标经过到节点上
@@ -244,7 +246,8 @@ function drawing() {
     // 交互模式 https://g6.antv.vision/zh/docs/manual/middle/states/mode
     modes: {
       // 内置 Behavior https://g6.antv.vision/zh/docs/manual/middle/states/defaultBehavior#%E5%86%85%E7%BD%AE-behavior
-      default: ['zoom-canvas', 'drag-canvas', 'drag-node', 'brush-select']
+      // default: ['zoom-canvas', 'drag-canvas', 'drag-node', 'brush-select']
+      default: ['drag-node']
     },
     nodeStateStyles: {
       // 鼠标经过到节点上
