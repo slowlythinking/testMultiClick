@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@antv/g6": "^4.1.6",
+    "core-js": "^3.6.5",
     "hammerjs": "^2.0.8",
     "interactjs": "^1.10.17",
     "sass": "^1.58.3",
