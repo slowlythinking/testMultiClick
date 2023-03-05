@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve"
+    "dev": "vue-cli-service serve"
   },
   "dependencies": {
     "@antv/f6": "^0.0.19",
