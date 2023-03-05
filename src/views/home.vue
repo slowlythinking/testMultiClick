@@ -50,21 +50,25 @@ var gplotData = {
   nodes: [
     {
       id: 'node1', // String，该节点存在则必须，节点的唯一标识
+      size: 60,
       x: 50, // Number，可选，节点位置的 x 值
       y: 50, // Number，可选，节点位置的 y 值
     },
     {
       id: 'node2',
+      size: 60,
       x: 250,
       y: 50,
     },
     {
       id: 'node3',
+      size: 60,
       x: 250,
       y: 250,
     },
     {
       id: 'node4',
+      size: 60,
       x: 50,
       y: 250,
     }
@@ -94,21 +98,25 @@ var gplotData1 = {
   nodes: [
     {
       id: 'node1', // String，该节点存在则必须，节点的唯一标识
+      size: 60,
       x: 50, // Number，可选，节点位置的 x 值
       y: 50, // Number，可选，节点位置的 y 值
     },
     {
       id: 'node2',
+      size: 60,
       x: 250,
       y: 50,
     },
     {
       id: 'node3',
+      size: 60,
       x: 250,
       y: 250,
     },
     {
       id: 'node4',
+      size: 60,
       x: 50,
       y: 250,
     }
@@ -138,21 +146,25 @@ var gplotData2 = {
   nodes: [
     {
       id: 'node1', // String，该节点存在则必须，节点的唯一标识
+      size: 60,
       x: 50, // Number，可选，节点位置的 x 值
       y: 50, // Number，可选，节点位置的 y 值
     },
     {
       id: 'node2',
+      size: 60,
       x: 250,
       y: 50,
     },
     {
       id: 'node3',
+      size: 60,
       x: 250,
       y: 250,
     },
     {
       id: 'node4',
+      size: 60,
       x: 50,
       y: 250,
     }
@@ -438,9 +450,9 @@ function addHammer(el, textpane) {
 onMounted(() => {
   const url = ref("https://bobobq.cn:18081/#/");
 
-  addHammer(document.querySelector(".pos1"), ".bg1");
-  addHammer(document.querySelector(".pos2"), ".bg2");
-  addHammer(document.querySelector(".pos3"), ".bg3");
+  // addHammer(document.querySelector(".pos1"), ".bg1");
+  // addHammer(document.querySelector(".pos2"), ".bg2");
+  // addHammer(document.querySelector(".pos3"), ".bg3");
 
   drawing();
   drawing1();
