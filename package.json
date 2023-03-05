@@ -2,23 +2,24 @@
   "name": "kgichgc-frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "serve": "vue-cli-service serve"
   },
   "dependencies": {
+    "@antv/f6": "^0.0.19",
+    "@antv/f6-hammerjs": "^0.0.1",
     "@antv/g6": "^4.1.6",
     "core-js": "^3.6.5",
-    "hammerjs": "^2.0.8",
     "interactjs": "^1.10.17",
-    "sass": "^1.58.3",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "vite": "^4.1.0"
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }

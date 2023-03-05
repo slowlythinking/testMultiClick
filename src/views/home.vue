@@ -39,8 +39,9 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import interact from "interactjs";
-import Hammer from "hammerjs";
-import G6 from '@antv/g6'
+// import Hammer from "hammerjs";
+// import F6 from '@antv/g6';
+import F6 from '@antv/f6';
 
 var gplot = null; // 拓扑图实例
 var gplot1 = null; // 拓扑图实例
@@ -190,7 +191,7 @@ var gplotData2 = {
   ]
 }
 function drawing2() {
-  gplot2 = new G6.Graph({
+  gplot2 = new F6.Graph({
     container: "posid3", // String | HTMLElement，必须，容器 id 或容器本身
     width: 800, // 设置画布宽度。 Number，必须
     height: 500, /// 设置画布高度。Number，必须
@@ -264,7 +265,7 @@ function drawing2() {
   })
 };
 function drawing1() {
-  gplot1 = new G6.Graph({
+  gplot1 = new F6.Graph({
     container: "posid2", // String | HTMLElement，必须，容器 id 或容器本身
     width: 800, // 设置画布宽度。 Number，必须
     height: 500, /// 设置画布高度。Number，必须
@@ -339,7 +340,7 @@ function drawing1() {
 };
 
 function drawing() {
-  gplot = new G6.Graph({
+  gplot = new F6.Graph({
     container: "posid1", // String | HTMLElement，必须，容器 id 或容器本身
     width: 800, // 设置画布宽度。 Number，必须
     height: 500, /// 设置画布高度。Number，必须
@@ -429,23 +430,23 @@ Object.prototype.toDirString = function () {
   return output.join("\n");
 };
 
-function addHammer(el, textpane) {
-  var mc = new Hammer(el, { multiUser: true });
-  mc.get("pan").set({ direction: Hammer.DIRECTION_ALL });
-  mc.get("swipe").set({ direction: Hammer.DIRECTION_ALL });
-  mc.get("pinch").set({ enable: true });
-  mc.get("rotate").set({ enable: true });
-  var infopane = document.querySelector(textpane)
+// function addHammer(el, textpane) {
+//   var mc = new Hammer(el, { multiUser: true });
+//   mc.get("pan").set({ direction: Hammer.DIRECTION_ALL });
+//   mc.get("swipe").set({ direction: Hammer.DIRECTION_ALL });
+//   mc.get("pinch").set({ enable: true });
+//   mc.get("rotate").set({ enable: true });
+//   var infopane = document.querySelector(textpane)
 
-  mc.on("swipe pan press pinch rotate tap doubletap", function (ev) {
-    ev.preventDefault();
-    // el.innerText = ev.pointers;
-    var jsonStr = JSON.stringify(ev);
-    // el.innerText = jsonStr;
-    infopane.innerText = ev.toDirString();
-    console.log("获取的数据:", ev);
-  });
-}
+//   mc.on("swipe pan press pinch rotate tap doubletap", function (ev) {
+//     ev.preventDefault();
+//     // el.innerText = ev.pointers;
+//     var jsonStr = JSON.stringify(ev);
+//     // el.innerText = jsonStr;
+//     infopane.innerText = ev.toDirString();
+//     console.log("获取的数据:", ev);
+//   });
+// }
 
 onMounted(() => {
   const url = ref("https://bobobq.cn:18081/#/");
